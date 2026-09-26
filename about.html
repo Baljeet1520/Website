@@ -1,0 +1,911 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Skywater Plumbing and Heating Ltd. — Comfort Today. Reliability Tomorrow.">
+
+    <title>About Us | Skywater Plumbing and Heating Ltd.</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+
+
+    <!-- SERVICES DROPDOWN CSS -->
+    <style>
+
+        /* Services dropdown container */
+        .services-dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+
+        /* Services button */
+        .services-dropdown-btn {
+            border: none;
+            background: transparent;
+            color: inherit;
+            font-family: inherit;
+            font-size: inherit;
+            font-weight: inherit;
+            cursor: pointer;
+            padding: 0;
+        }
+
+
+        /* Dropdown arrow */
+        .services-arrow {
+            display: inline-block;
+            margin-left: 5px;
+            transition: transform 0.2s ease;
+        }
+
+
+        /* Rotate arrow when open */
+        .services-dropdown.open .services-arrow {
+            transform: rotate(180deg);
+        }
+
+
+        /* Dropdown menu */
+        .services-dropdown-menu {
+            display: none;
+            position: absolute;
+            top: calc(100% + 15px);
+            left: 0;
+
+            min-width: 230px;
+
+            background: #ffffff;
+
+            border-radius: 8px;
+
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+
+            overflow: hidden;
+
+            z-index: 9999;
+        }
+
+
+        /* Show dropdown */
+        .services-dropdown-menu.show {
+            display: block;
+        }
+
+
+        /* Dropdown links */
+        .services-dropdown-menu a {
+            display: block;
+
+            padding: 14px 18px;
+
+            color: #222222;
+
+            text-decoration: none;
+
+            font-size: 15px;
+
+            font-weight: 500;
+
+            background: #ffffff;
+
+            transition: all 0.2s ease;
+        }
+
+
+        /* Hover */
+        .services-dropdown-menu a:hover {
+            background: #f1f7fa;
+            color: #0077b6;
+        }
+
+
+        /* Mobile dropdown */
+        @media (max-width: 900px) {
+
+            .services-dropdown {
+                width: 100%;
+            }
+
+            .services-dropdown-btn {
+                width: 100%;
+                text-align: left;
+                padding: 12px 0;
+            }
+
+            .services-dropdown-menu {
+                position: static;
+
+                width: 100%;
+
+                margin-top: 5px;
+
+                box-shadow: none;
+
+                border: 1px solid #eeeeee;
+
+                border-radius: 6px;
+            }
+
+            .services-dropdown-menu a {
+                padding: 12px 15px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- TOP BAR -->
+
+<div class="topbar">
+
+    <div class="container">
+
+        <span>
+            Professional Plumbing & Heating Services
+        </span>
+
+        <div class="topbar-right">
+
+            <a href="contact.html">
+                Request a Quote
+            </a>
+
+            <a href="tel:2363322160">
+                Call Skywater
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- HEADER -->
+
+<header>
+
+    <div class="container nav">
+
+
+        <!-- LOGO -->
+
+        <a href="index.html">
+
+            <img
+                class="logo"
+                src="skywater-logo.png"
+                alt="Skywater Plumbing and Heating Ltd.">
+
+        </a>
+
+
+
+        <!-- NAVIGATION -->
+
+        <nav class="navlinks">
+
+
+            <a href="index.html">
+                Home
+            </a>
+
+
+            <a class="active" href="about.html">
+                About Us
+            </a>
+
+
+
+            <!-- SERVICES DROPDOWN -->
+
+            <div class="services-dropdown">
+
+
+                <button
+                    type="button"
+                    class="services-dropdown-btn"
+                    onclick="toggleServices(event)">
+
+                    Services
+
+                    <span class="services-arrow">
+                        ▾
+                    </span>
+
+                </button>
+
+
+
+                <div class="services-dropdown-menu">
+
+
+                    <a href="residential.html">
+                        Residential Plumbing
+                    </a>
+
+
+                    <a href="commercial.html">
+                        Commercial Plumbing
+                    </a>
+
+
+                    <a href="emergency.html">
+                        Emergency Plumbing
+                    </a>
+
+
+                    <a href="other-services.html">
+                        Other Services
+                    </a>
+
+
+                </div>
+
+            </div>
+
+
+
+            <a href="service-areas.html">
+                Areas
+            </a>
+
+
+
+            <a
+                class="btn btn-primary"
+                href="contact.html">
+
+                Get a Free Quote
+
+            </a>
+
+
+        </nav>
+
+
+
+        <!-- MOBILE MENU BUTTON -->
+
+        <button
+            class="mobile-btn"
+            onclick="toggleMenu()">
+
+            ☰
+
+        </button>
+
+
+    </div>
+
+</header>
+
+
+
+<!-- MAIN -->
+
+<main>
+
+
+    <!-- HERO -->
+
+    <section class="page-hero">
+
+        <div class="container">
+
+
+            <div class="eyebrow">
+                Our Heritage
+            </div>
+
+
+            <h1>
+                Skywater Plumbing and Heating Ltd.
+            </h1>
+
+
+            <p>
+                A commitment to craftsmanship, technical precision,
+                dependable service, and lasting customer relationships
+                in the Lower Mainland.
+            </p>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- OUR STORY -->
+
+    <section>
+
+        <div class="container content-grid">
+
+
+            <div class="content">
+
+
+                <div class="eyebrow">
+                    Our Story
+                </div>
+
+
+                <h2>
+                    Built on a Simple Principle
+                </h2>
+
+
+                <p>
+                    Skywater Plumbing and Heating Ltd was founded on
+                    a simple principle: to provide the highest standard
+                    of craftsmanship and technical precision to every
+                    client we serve.
+                </p>
+
+
+                <p>
+                    Our journey began with a commitment to excellence
+                    in the Lower Mainland, and today, we continue to
+                    uphold that legacy through artisanal plumbing and
+                    heating solutions.
+                </p>
+
+
+                <h3>
+                    Our Mission
+                </h3>
+
+
+                <p>
+                    Our mission is to deliver affordable and dependable
+                    plumbing solutions through skilled workmanship,
+                    transparent pricing, and exceptional customer service.
+                </p>
+
+
+                <h3>
+                    Our Vision
+                </h3>
+
+
+                <p>
+                    To become the most trusted and recommended plumbing
+                    company in our community by consistently delivering
+                    top-quality service and building long-term customer
+                    relationships.
+                </p>
+
+
+                <div class="person">
+
+                    <h3>
+                        Jaspreet Singh Dhaliwal
+                    </h3>
+
+                    <p>
+                        Red Seal Certified Plumber
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+
+            <div>
+
+
+                <div class="mission-card">
+
+                    <h3>
+                        Mission
+                    </h3>
+
+                    <p>
+                        Affordable and dependable plumbing solutions
+                        through skilled workmanship, transparent pricing,
+                        and exceptional customer service.
+                    </p>
+
+                </div>
+
+
+                <div class="mission-card">
+
+                    <h3>
+                        Vision
+                    </h3>
+
+                    <p>
+                        To become the most trusted and recommended
+                        plumbing company in our community through
+                        top-quality service and long-term relationships.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ADVANTAGES -->
+
+    <section style="background:#f5fbff">
+
+        <div class="container">
+
+
+            <div class="section-head">
+
+                <div class="eyebrow">
+                    What Sets Us Apart
+                </div>
+
+                <h2>
+                    Our Competitive Advantages
+                </h2>
+
+            </div>
+
+
+
+            <div class="content-grid">
+
+
+                <div>
+
+
+                    <div class="advantage">
+
+                        <div class="adv-icon">
+                            ⚡
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Fast Response Time
+                            </h3>
+
+                            <p>
+                                We prioritize urgent plumbing issues
+                                and provide quick dispatch to minimize
+                                damage and inconvenience. Emergency-ready
+                                service when customers need it most.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="advantage">
+
+                        <div class="adv-icon">
+                            🧰
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Licensed & Skilled Workmanship
+                            </h3>
+
+                            <p>
+                                Our work is performed by trained plumbers
+                                who ensure every job is done correctly,
+                                safely, and up to code the first time.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="advantage">
+
+                        <div class="adv-icon">
+                            💬
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Transparent Pricing
+                            </h3>
+
+                            <p>
+                                No hidden fees or surprise charges.
+                                We provide clear estimates.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <div>
+
+
+                    <div class="advantage">
+
+                        <div class="adv-icon">
+                            🏡
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Full Residential & Commercial Service
+                            </h3>
+
+                            <p>
+                                From small home repairs to large
+                                commercial plumbing systems, we handle
+                                a wide range of plumbing needs under
+                                one roof.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="advantage">
+
+                        <div class="adv-icon">
+                            📍
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Local BC Knowledge
+                            </h3>
+
+                            <p>
+                                We understand local building codes,
+                                weather-related plumbing issues, and
+                                regional requirements in British Columbia,
+                                ensuring compliant and effective solutions.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- CTA -->
+
+    <section class="cta">
+
+        <div class="container">
+
+
+            <div class="cta-box">
+
+
+                <div>
+
+                    <h2>
+                        Let's Talk About Your Project
+                    </h2>
+
+                    <p>
+                        Contact Skywater Plumbing and Heating Ltd.
+                        to discuss your plumbing needs.
+                    </p>
+
+                </div>
+
+
+                <a
+                    class="btn"
+                    href="contact.html">
+
+                    Contact Us →
+
+                </a>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <div class="container">
+
+
+        <div class="footer-grid">
+
+
+            <div>
+
+
+                <img
+                    class="footer-logo"
+                    src="skywater-logo.png"
+                    alt="Skywater Plumbing and Heating Ltd.">
+
+
+                <p>
+                    Professional plumbing and heating services with
+                    a commitment to quality, reliability, and customer care.
+                </p>
+
+
+            </div>
+
+
+
+            <div>
+
+
+                <h4>
+                    Quick Links
+                </h4>
+
+
+                <div class="footer-links">
+
+
+                    <a href="about.html">
+                        About Us
+                    </a>
+
+
+                    <a href="residential.html">
+                        Residential Plumbing
+                    </a>
+
+
+                    <a href="commercial.html">
+                        Commercial Plumbing
+                    </a>
+
+
+                    <a href="emergency.html">
+                        Emergency Plumbing
+                    </a>
+
+
+                    <a href="other-services.html">
+                        Other Services
+                    </a>
+
+
+                </div>
+
+            </div>
+
+
+
+            <div>
+
+
+                <h4>
+                    Contact
+                </h4>
+
+
+                <div class="footer-links">
+
+
+                    <a href="tel:2363322160">
+                        236-332-2160
+                    </a>
+
+
+                    <a href="mailto:info@skywaterplumbing.ca">
+                        info@skywaterplumbing.ca
+                    </a>
+
+
+                    <a href="contact.html">
+                        Request a Quote
+                    </a>
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="copyright">
+
+
+            <span>
+
+                ©
+                <span id="year"></span>
+
+                Skywater Plumbing and Heating Ltd.
+                All rights reserved.
+
+            </span>
+
+
+            <span>
+                Comfort Today. Reliability Tomorrow.
+            </span>
+
+
+        </div>
+
+
+    </div>
+
+</footer>
+
+
+
+<!-- JAVASCRIPT -->
+
+<script>
+
+
+/* ================================
+   COPYRIGHT YEAR
+================================ */
+
+document.getElementById("year").textContent =
+    new Date().getFullYear();
+
+
+
+/* ================================
+   SERVICES DROPDOWN
+================================ */
+
+function toggleServices(event) {
+
+    event.stopPropagation();
+
+    const dropdown =
+        document.querySelector(".services-dropdown");
+
+    const menu =
+        document.querySelector(".services-dropdown-menu");
+
+
+    dropdown.classList.toggle("open");
+
+    menu.classList.toggle("show");
+
+}
+
+
+
+/* ================================
+   CLOSE SERVICES DROPDOWN
+   WHEN CLICKING OUTSIDE
+================================ */
+
+document.addEventListener("click", function(event) {
+
+    const dropdown =
+        document.querySelector(".services-dropdown");
+
+    const menu =
+        document.querySelector(".services-dropdown-menu");
+
+
+    if (!dropdown.contains(event.target)) {
+
+        dropdown.classList.remove("open");
+
+        menu.classList.remove("show");
+
+    }
+
+});
+
+
+
+/* ================================
+   MOBILE MENU
+================================ */
+
+function toggleMenu() {
+
+    const nav =
+        document.querySelector(".navlinks");
+
+
+    nav.style.display =
+        nav.style.display === "flex"
+            ? "none"
+            : "flex";
+
+
+    if (nav.style.display === "flex") {
+
+        nav.style.position = "absolute";
+
+        nav.style.top = "76px";
+
+        nav.style.left = "4%";
+
+        nav.style.right = "4%";
+
+        nav.style.background = "#fff";
+
+        nav.style.padding = "20px";
+
+        nav.style.flexDirection = "column";
+
+        nav.style.alignItems = "stretch";
+
+        nav.style.boxShadow =
+            "0 15px 35px rgba(0,0,0,.12)";
+
+    }
+
+}
+
+</script>
+
+
+</body>
+</html>
+

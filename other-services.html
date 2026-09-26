@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="Skywater Plumbing and Heating Ltd. — Comfort Today. Reliability Tomorrow.">
+
+<title>Other Services | Skywater Plumbing and Heating Ltd.</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+
+<style>
+/* =========================
+   SERVICES DROPDOWN
+========================= */
+
+.services-dropdown {
+    position: relative;
+}
+
+.services-btn {
+    background: none;
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 600;
+    color: inherit;
+    cursor: pointer;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.dropdown-arrow {
+    font-size: 12px;
+    transition: transform 0.2s ease;
+}
+
+.services-dropdown.open .dropdown-arrow {
+    transform: rotate(180deg);
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    min-width: 220px;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 10px 0;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    z-index: 9999;
+    border: 1px solid #e8e8e8;
+}
+
+.services-dropdown.open .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 12px 18px;
+    color: #222;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.dropdown-menu a:hover {
+    background: #f1f7fb;
+    color: #0077b6;
+}
+
+/* =========================
+   MOBILE DROPDOWN
+========================= */
+
+@media (max-width: 900px) {
+
+    .services-dropdown {
+        width: 100%;
+    }
+
+    .services-btn {
+        width: 100%;
+        justify-content: space-between;
+        padding: 12px 0;
+    }
+
+    .dropdown-menu {
+        position: static;
+        width: 100%;
+        box-shadow: none;
+        border: none;
+        border-radius: 0;
+        padding: 5px 0 5px 15px;
+        background: #f8fafc;
+    }
+
+    .dropdown-menu a {
+        padding: 11px 15px;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+
+<div class="topbar">
+    <div class="container">
+        <span>Professional Plumbing & Heating Services</span>
+
+    <div class="topbar-right">
+        <a href="contact.html">Request a Quote</a>
+        <a href="tel:2363322160">Call Skywater</a>
+    </div>
+</div>
+
+
+</div>
+
+<!-- HEADER -->
+
+<header>
+    <div class="container nav">
+
+
+    <a href="index.html">
+        <img class="logo"
+             src="skywater-logo.png"
+             alt="Skywater Plumbing and Heating Ltd.">
+    </a>
+
+    <nav class="navlinks">
+
+        <a href="index.html">Home</a>
+
+        <a href="about.html">About Us</a>
+
+
+        <!-- SERVICES DROPDOWN -->
+        <div class="services-dropdown">
+
+            <button
+                type="button"
+                class="services-btn"
+                onclick="toggleServices(event)"
+                aria-expanded="false"
+                aria-haspopup="true"
+            >
+                Services
+                <span class="dropdown-arrow">▼</span>
+            </button>
+
+            <div class="dropdown-menu">
+
+                <a href="residential.html">
+                    Residential Plumbing
+                </a>
+
+                <a href="commercial.html">
+                    Commercial Plumbing
+                </a>
+
+                <a href="emergency.html">
+                    Emergency Plumbing
+                </a>
+
+                <a href="other-services.html">
+                    Other Services
+                </a>
+
+            </div>
+
+        </div>
+        <!-- END SERVICES DROPDOWN -->
+
+
+        <a href="service-areas.html">
+           Areas
+        </a>
+
+        <a class="btn btn-primary" href="contact.html">
+            Get a Free Quote
+        </a>
+
+    </nav>
+
+
+    <!-- MOBILE MENU BUTTON -->
+    <button
+        class="mobile-btn"
+        onclick="toggleMenu()"
+        aria-label="Open menu"
+    >
+        ☰
+    </button>
+
+</div>
+
+
+</header>
+
+<!-- MAIN CONTENT -->
+
+<main>
+
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+
+    <div class="container">
+
+        <div class="eyebrow">
+            Skywater Services
+        </div>
+
+        <h1>
+            Other Services
+        </h1>
+
+        <p>
+            Additional plumbing and heating solutions tailored
+            to your property and project.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- SERVICES -->
+<section>
+
+    <div class="container">
+
+        <div class="section-head">
+
+            <div class="eyebrow">
+                Professional Service
+            </div>
+
+            <h2>
+                Additional Plumbing & Heating Solutions
+            </h2>
+
+            <p>
+                Contact Skywater to discuss your specific requirements.
+            </p>
+
+        </div>
+
+
+        <div class="grid3">
+
+
+            <div class="card">
+
+                <div class="icon">
+                    ♨
+                </div>
+
+                <h3>
+                    Heating Services
+                </h3>
+
+                <p>
+                    Plumbing-related heating solutions and service
+                    for comfortable homes and properties.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="icon">
+                    ⚙
+                </div>
+
+                <h3>
+                    Installation Projects
+                </h3>
+
+                <p>
+                    Plumbing installation work for upgrades,
+                    replacements, and new projects.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="icon">
+                    💧
+                </div>
+
+                <h3>
+                    Water & Piping
+                </h3>
+
+                <p>
+                    Water supply, piping, valves, and related
+                    plumbing solutions.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="icon">
+                    ⌂
+                </div>
+
+                <h3>
+                    Renovation Plumbing
+                </h3>
+
+                <p>
+                    Plumbing support for kitchens, bathrooms,
+                    additions, and property improvements.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="icon">
+                    ✓
+                </div>
+
+                <h3>
+                    Maintenance
+                </h3>
+
+                <p>
+                    Service and maintenance designed around
+                    dependable operation.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="icon">
+                    ✦
+                </div>
+
+                <h3>
+                    Custom Solutions
+                </h3>
+
+                <p>
+                    Tell us about your project and we can discuss
+                    the appropriate plumbing solution.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CTA -->
+<section class="cta">
+
+    <div class="container">
+
+        <div class="cta-box">
+
+            <div>
+
+                <h2>
+                    Need Other Services?
+                </h2>
+
+                <p>
+                    Request a quote and tell us about your project.
+                </p>
+
+            </div>
+
+            <a class="btn" href="contact.html">
+                Request a Quote →
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+</main>
+
+<!-- FOOTER -->
+
+<footer>
+
+
+<div class="container">
+
+    <div class="footer-grid">
+
+
+        <div>
+
+            <img
+                class="footer-logo"
+                src="skywater-logo.png"
+                alt="Skywater Plumbing and Heating Ltd."
+            >
+
+            <p>
+                Professional plumbing and heating services with
+                a commitment to quality, reliability, and customer care.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h4>
+                Quick Links
+            </h4>
+
+            <div class="footer-links">
+
+                <a href="about.html">
+                    About Us
+                </a>
+
+                <a href="residential.html">
+                    Residential Plumbing
+                </a>
+
+                <a href="commercial.html">
+                    Commercial Plumbing
+                </a>
+
+                <a href="emergency.html">
+                    Emergency Plumbing
+                </a>
+
+                <a href="other-services.html">
+                    Other Services
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div>
+
+            <h4>
+                Contact
+            </h4>
+
+            <div class="footer-links">
+
+                <a href="tel:2363322160">
+                    236-332-2160
+                </a>
+
+                <a href="mailto:info@skywaterplumbing.ca">
+                    info@skywaterplumbing.ca
+                </a>
+
+                <a href="contact.html">
+                    Request a Quote
+                </a>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="copyright">
+
+        <span>
+            © <span id="year"></span>
+            Skywater Plumbing and Heating Ltd.
+            All rights reserved.
+        </span>
+
+        <span>
+            Comfort Today. Reliability Tomorrow.
+        </span>
+
+    </div>
+
+</div>
+
+
+</footer>
+
+<!-- JAVASCRIPT -->
+
+<script>
+
+/* =========================
+   CURRENT YEAR
+========================= */
+
+document.getElementById("year").textContent =
+    new Date().getFullYear();
+
+
+/* =========================
+   SERVICES DROPDOWN
+========================= */
+
+function toggleServices(event) {
+
+    event.stopPropagation();
+
+    const dropdown =
+        document.querySelector(".services-dropdown");
+
+    const button =
+        document.querySelector(".services-btn");
+
+    const isOpen =
+        dropdown.classList.contains("open");
+
+    dropdown.classList.toggle("open");
+
+    button.setAttribute(
+        "aria-expanded",
+        !isOpen
+    );
+}
+
+
+/* =========================
+   CLOSE DROPDOWN
+   WHEN CLICKING OUTSIDE
+========================= */
+
+document.addEventListener("click", function(event) {
+
+    const dropdown =
+        document.querySelector(".services-dropdown");
+
+    const button =
+        document.querySelector(".services-btn");
+
+    if (!dropdown.contains(event.target)) {
+
+        dropdown.classList.remove("open");
+
+        button.setAttribute(
+            "aria-expanded",
+            "false"
+        );
+
+    }
+
+});
+
+
+/* =========================
+   MOBILE MENU
+========================= */
+
+function toggleMenu() {
+
+    const nav =
+        document.querySelector(".navlinks");
+
+    if (nav.style.display === "flex") {
+
+        nav.style.display = "none";
+
+    } else {
+
+        nav.style.display = "flex";
+
+        nav.style.position = "absolute";
+        nav.style.top = "76px";
+        nav.style.left = "4%";
+        nav.style.right = "4%";
+        nav.style.background = "#fff";
+        nav.style.padding = "20px";
+        nav.style.flexDirection = "column";
+        nav.style.alignItems = "stretch";
+        nav.style.boxShadow =
+            "0 15px 35px rgba(0,0,0,.12)";
+        nav.style.zIndex = "9998";
+
+    }
+
+}
+
+</script>
+
+</body>
+</html>

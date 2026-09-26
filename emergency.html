@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="Skywater Plumbing and Heating Ltd. — Emergency Plumbing Services.">
+
+<title>Emergency Plumbing | Skywater Plumbing and Heating Ltd.</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+
+<style>
+
+/* =========================================
+   SERVICES DROPDOWN
+========================================= */
+
+.services-dropdown {
+    position: relative;
+}
+
+.services-btn {
+    background: none;
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 600;
+    color: inherit;
+    cursor: pointer;
+    padding: 10px 0;
+
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.dropdown-arrow {
+    font-size: 11px;
+    transition: transform 0.2s ease;
+}
+
+.services-dropdown.open .dropdown-arrow {
+    transform: rotate(180deg);
+}
+
+
+/* Dropdown box */
+
+.dropdown-menu {
+    display: none;
+
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+
+    min-width: 220px;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+
+    padding: 8px 0;
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+
+    z-index: 9999;
+}
+
+
+/* Show dropdown */
+
+.services-dropdown.open .dropdown-menu {
+    display: block;
+}
+
+
+/* Dropdown links */
+
+.dropdown-menu a {
+    display: block;
+
+    padding: 12px 18px;
+
+    color: #222222;
+
+    text-decoration: none;
+
+    font-weight: 500;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease;
+}
+
+
+/* Hover */
+
+.dropdown-menu a:hover {
+    background: #f1f7fb;
+    color: #0077b6;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 900px) {
+
+    .services-dropdown {
+        width: 100%;
+    }
+
+    .services-btn {
+        width: 100%;
+        justify-content: space-between;
+
+        padding: 12px 0;
+    }
+
+    .dropdown-menu {
+        position: static;
+
+        width: 100%;
+
+        border: none;
+        border-radius: 0;
+
+        box-shadow: none;
+
+        background: #f8fafc;
+
+        padding: 5px 0 5px 15px;
+    }
+
+    .dropdown-menu a {
+        padding: 11px 15px;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- =========================================
+     TOP BAR
+========================================= -->
+
+<div class="topbar">
+
+<div class="container">
+
+    <span>
+        Professional Plumbing & Heating Services
+    </span>
+
+    <div class="topbar-right">
+
+        <a href="contact.html">
+            Request a Quote
+        </a>
+
+        <a href="tel:2363322160">
+            Call Skywater
+        </a>
+
+    </div>
+
+</div>
+
+
+</div>
+
+<!-- =========================================
+     HEADER
+========================================= -->
+
+<header>
+
+<div class="container nav">
+
+<!-- LOGO -->
+
+<a href="index.html">
+
+    <img
+        class="logo"
+        src="skywater-logo.png"
+        alt="Skywater Plumbing and Heating Ltd."
+    >
+
+</a>
+
+
+<!-- NAVIGATION -->
+
+<nav class="navlinks">
+
+
+    <a href="index.html">
+        Home
+    </a>
+
+
+    <a href="about.html">
+        About Us
+    </a>
+
+
+    <!-- =================================
+         SERVICES DROPDOWN
+    ================================== -->
+
+    <div class="services-dropdown">
+
+        <button
+            type="button"
+            class="services-btn"
+            onclick="toggleServices(event)"
+            aria-haspopup="true"
+            aria-expanded="false"
+        >
+
+            Services
+
+            <span class="dropdown-arrow">
+                ▼
+            </span>
+
+        </button>
+
+
+        <div class="dropdown-menu">
+
+            <a href="residential.html">
+                Residential Plumbing
+            </a>
+
+            <a href="commercial.html">
+                Commercial Plumbing
+            </a>
+
+            <a
+                class="active"
+                href="emergency.html"
+            >
+                Emergency Plumbing
+            </a>
+
+            <a href="other-services.html">
+                Other Services
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- SERVICE AREAS -->
+
+    <a href="service-areas.html">
+        Areas
+    </a>
+
+
+    <!-- QUOTE BUTTON -->
+
+    <a
+        class="btn btn-primary"
+        href="contact.html"
+    >
+        Get a Free Quote
+    </a>
+
+</nav>
+
+
+<!-- MOBILE MENU BUTTON -->
+
+<button
+    class="mobile-btn"
+    onclick="toggleMenu()"
+    aria-label="Open navigation menu"
+>
+    ☰
+</button>
+
+
+</div>
+
+</header>
+
+<!-- =========================================
+     MAIN
+========================================= -->
+
+<main>
+
+<!-- =========================================
+     PAGE HERO
+========================================= -->
+
+<section class="page-hero">
+
+<div class="container">
+
+<div class="eyebrow">
+    Skywater Services
+</div>
+
+<h1>
+    Emergency Plumbing
+</h1>
+
+<p>
+    When an urgent plumbing problem occurs,
+    Skywater focuses on fast response and
+    practical solutions.
+</p>
+
+
+</div>
+
+</section>
+
+<section class="work-photo-section">
+    <div class="container">
+
+        <img
+            class="work-photo"
+            src="emergency-plumbing.png"
+            alt="Skywater plumber completing an emergency plumbing repair"
+        >
+
+    </div>
+</section>
+<!-- =========================================
+     EMERGENCY SERVICES
+========================================= -->
+
+<section>
+
+<div class="container">
+
+<div class="section-head">
+
+    <div class="eyebrow">
+        Professional Service
+    </div>
+
+    <h2>
+        Urgent Plumbing Issues Need Prompt Attention
+    </h2>
+
+    <p>
+        Contact Skywater to discuss your
+        emergency plumbing requirements.
+    </p>
+
+</div>
+
+
+<div class="grid3">
+
+
+    <!-- FAST RESPONSE -->
+
+    <div class="card">
+
+        <div class="icon">
+            ⚡
+        </div>
+
+        <h3>
+            Fast Response
+        </h3>
+
+        <p>
+            We prioritize urgent plumbing issues
+            and work to respond as quickly as possible.
+        </p>
+
+    </div>
+
+
+    <!-- LEAKS -->
+
+    <div class="card">
+
+        <div class="icon">
+            💧
+        </div>
+
+        <h3>
+            Leaks & Burst Pipes
+        </h3>
+
+        <p>
+            Immediate attention to active leaks
+            and water-loss situations.
+        </p>
+
+    </div>
+
+
+    <!-- BLOCKED DRAINS -->
+
+    <div class="card">
+
+        <div class="icon">
+            ⌁
+        </div>
+
+        <h3>
+            Blocked Drains
+        </h3>
+
+        <p>
+            Help with serious drainage blockages
+            affecting your property.
+        </p>
+
+    </div>
+
+
+    <!-- WATER HEATER -->
+
+    <div class="card">
+
+        <div class="icon">
+            ♨
+        </div>
+
+        <h3>
+            Water Heater Problems
+        </h3>
+
+        <p>
+            Support for urgent water-heater
+            plumbing issues.
+        </p>
+
+    </div>
+
+
+    <!-- PROPERTY PROTECTION -->
+
+    <div class="card">
+
+        <div class="icon">
+            ⌂
+        </div>
+
+        <h3>
+            Property Protection
+        </h3>
+
+        <p>
+            Practical steps to minimize damage
+            and inconvenience.
+        </p>
+
+    </div>
+
+
+    <!-- DIRECT CONTACT -->
+
+    <div class="card">
+
+        <div class="icon">
+            ☎
+        </div>
+
+        <h3>
+            Direct Contact
+        </h3>
+
+        <p>
+            Call Skywater to explain the issue
+            and discuss the next step.
+        </p>
+
+    </div>
+
+
+</div>
+
+
+</div>
+
+</section>
+
+<!-- =========================================
+     CTA
+========================================= -->
+
+<section class="cta">
+
+<div class="container">
+
+
+<div class="cta-box">
+
+    <div>
+
+        <h2>
+            Need Emergency Plumbing?
+        </h2>
+
+        <p>
+            Call Skywater or request a quote
+            for your plumbing needs.
+        </p>
+
+    </div>
+
+
+    <a
+        class="btn"
+        href="tel:2363322160"
+    >
+        Call 236-332-2160 →
+    </a>
+
+</div>
+
+
+</div>
+
+</section>
+
+</main>
+
+<!-- =========================================
+     FOOTER
+========================================= -->
+
+<footer>
+
+<div class="container">
+
+<div class="footer-grid">
+
+
+    <!-- COMPANY -->
+
+    <div>
+
+        <img
+            class="footer-logo"
+            src="skywater-logo.png"
+            alt="Skywater Plumbing and Heating Ltd."
+        >
+
+        <p>
+            Professional plumbing and heating services
+            with a commitment to quality, reliability,
+            and customer care.
+        </p>
+
+    </div>
+
+
+    <!-- QUICK LINKS -->
+
+    <div>
+
+        <h4>
+            Quick Links
+        </h4>
+
+        <div class="footer-links">
+
+            <a href="about.html">
+                About Us
+            </a>
+
+            <a href="residential.html">
+                Residential Plumbing
+            </a>
+
+            <a href="commercial.html">
+                Commercial Plumbing
+            </a>
+
+            <a href="emergency.html">
+                Emergency Plumbing
+            </a>
+
+            <a href="other-services.html">
+                Other Services
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- CONTACT -->
+
+    <div>
+
+        <h4>
+            Contact
+        </h4>
+
+        <div class="footer-links">
+
+            <a href="tel:2363322160">
+                236-332-2160
+            </a>
+
+            <a href="mailto:info@skywaterplumbing.ca">
+                info@skywaterplumbing.ca
+            </a>
+
+            <a href="contact.html">
+                Request a Quote
+            </a>
+
+        </div>
+
+    </div>
+
+
+</div>
+
+
+<!-- COPYRIGHT -->
+
+<div class="copyright">
+
+    <span>
+        © <span id="year"></span>
+        Skywater Plumbing and Heating Ltd.
+        All rights reserved.
+    </span>
+
+    <span>
+        Comfort Today. Reliability Tomorrow.
+    </span>
+
+</div>
+
+
+</div>
+
+</footer>
+
+<!-- =========================================
+     JAVASCRIPT
+========================================= -->
+
+<script>
+
+
+/* CURRENT YEAR */
+
+document.getElementById("year").textContent =
+    new Date().getFullYear();
+
+
+/* =========================================
+   SERVICES DROPDOWN
+========================================= */
+
+function toggleServices(event) {
+
+    event.stopPropagation();
+
+    const dropdown =
+        document.querySelector(".services-dropdown");
+
+    const button =
+        document.querySelector(".services-btn");
+
+    const currentlyOpen =
+        dropdown.classList.contains("open");
+
+
+    dropdown.classList.toggle("open");
+
+
+    button.setAttribute(
+        "aria-expanded",
+        !currentlyOpen
+    );
+
+}
+
+
+/* =========================================
+   CLOSE SERVICES WHEN CLICKING OUTSIDE
+========================================= */
+
+document.addEventListener("click", function(event) {
+
+    const dropdown =
+        document.querySelector(".services-dropdown");
+
+    const button =
+        document.querySelector(".services-btn");
+
+
+    if (!dropdown.contains(event.target)) {
+
+        dropdown.classList.remove("open");
+
+        button.setAttribute(
+            "aria-expanded",
+            "false"
+        );
+
+    }
+
+});
+
+
+/* =========================================
+   MOBILE MENU
+========================================= */
+
+function toggleMenu() {
+
+    const nav =
+        document.querySelector(".navlinks");
+
+
+    if (nav.style.display === "flex") {
+
+        nav.style.display = "none";
+
+    } else {
+
+        nav.style.display = "flex";
+
+        nav.style.position = "absolute";
+
+        nav.style.top = "76px";
+
+        nav.style.left = "4%";
+
+        nav.style.right = "4%";
+
+        nav.style.background = "#fff";
+
+        nav.style.padding = "20px";
+
+        nav.style.flexDirection = "column";
+
+        nav.style.alignItems = "stretch";
+
+        nav.style.boxShadow =
+            "0 15px 35px rgba(0,0,0,.12)";
+
+        nav.style.zIndex = "9998";
+
+    }
+
+}
+
+</script>
+
+</body>
+</html>
