@@ -57,30 +57,136 @@ section{padding:92px 0}.section-head{text-align:center;max-width:760px;margin:0 
 }
 form{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field.full{grid-column:1/-1}label{font-size:12px;font-weight:700;color:#36536f;display:block;margin-bottom:6px}input,textarea,select{width:100%;border:1px solid #d7e5ef;border-radius:9px;padding:12px 13px;font:inherit;font-size:13px}textarea{min-height:115px;resize:vertical}
 footer{background:#061d39;color:#b7cadc;padding:45px 0 25px}.footer-grid{display:grid;grid-template-columns:1.3fr .7fr .7fr;gap:50px}.footer-logo{width:270px;margin-bottom:15px}footer p{font-size:13px;max-width:420px}footer h4{color:#fff;margin-bottom:14px;font-size:14px}.footer-links{display:grid;gap:8px;font-size:13px}.footer-links a:hover{color:#fff}.copyright{border-top:1px solid rgba(255,255,255,.1);margin-top:35px;padding-top:18px;font-size:11px;display:flex;justify-content:space-between;gap:20px}
- @media (max-width:1100px){
-      .nav-links{gap:20px;font-size:16px}
-      .brand{min-width:300px}
-      .brand-text strong{font-size:32px}
-      .areas-grid{grid-template-columns:repeat(2,1fr)}
-    }
-    @media (max-width:800px){
-      .topbar{font-size:14px;padding:0 20px}
-      .topbar-links{gap:15px}
-      .navbar{padding:18px 20px;flex-wrap:wrap;gap:20px}
-      .brand{min-width:0}
-      .nav-links{width:100%;overflow-x:auto;padding-bottom:5px;gap:22px}
-      .quote-btn{display:none}
-      .hero{padding:70px 20px 65px}
-      .hero h1{letter-spacing:-1px}
-      .hero p{font-size:19px}
-      .areas-section{padding:60px 20px 75px}
-      .areas-grid{grid-template-columns:1fr}
-      .cta-wrap{padding:0 20px 70px}
-      .cta{padding:42px 30px;display:block}
-      .cta h2{font-size:31px}
-      .cta-btn{display:inline-block;margin-top:25px}
-      footer{display:block;padding:35px 20px}
-      .footer-links{margin-top:18px;flex-wrap:wrap}
-    }
+
 @media(max-width:900px){.navlinks{display:none}.mobile-btn{display:block}.hero-grid,.about-grid,.content-grid,.contact-grid{grid-template-columns:1fr}.hero{padding:45px 0}.hero-grid{min-height:auto}.grid3{grid-template-columns:1fr 1fr}.cta-box{padding:42px 35px}.footer-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:600px){.topbar{display:none}.nav{height:76px}.logo{width:220px}section{padding:68px 0}h1{font-size:43px;letter-spacing:-1.8px}.hero p{font-size:16px}.grid3,.points{grid-template-columns:1fr}.service-mini{grid-template-columns:1fr}.cta-box{padding:34px 25px;display:block}.cta .btn{margin-top:22px}.footer-grid{grid-template-columns:1fr}.copyright{display:block}.copyright span{display:block;margin-top:8px}form{grid-template-columns:1fr}.field.full{grid-column:auto}.page-hero{padding:65px 0}}
+@media (max-width:800px){
+
+    /* Header */
+    .topbar{
+        font-size:14px;
+        padding:0 20px;
+    }
+
+    .topbar-links{
+        gap:15px;
+    }
+
+    .navbar{
+        padding:18px 20px;
+        flex-wrap:wrap;
+        gap:20px;
+    }
+
+    .brand{
+        min-width:0;
+        width:100%;
+    }
+
+    .nav-links{
+        width:100%;
+        overflow-x:auto;
+        padding-bottom:8px;
+        gap:22px;
+    }
+
+    .quote-btn{
+        display:none;
+    }
+
+    /* Hero */
+    .hero{
+        padding:70px 20px 65px;
+    }
+
+    .hero h1{
+        font-size:45px;
+        letter-spacing:-1px;
+    }
+
+    .hero p{
+        font-size:19px;
+    }
+
+    /* SERVICE AREA SECTION */
+    .areas-section{
+        padding:55px 16px 70px;
+    }
+
+    .section-heading{
+        margin-bottom:35px;
+    }
+
+    .section-heading h2{
+        font-size:34px;
+        line-height:1.15;
+    }
+
+    .section-heading p{
+        font-size:16px;
+        line-height:1.6;
+    }
+
+    /* AREA CARDS */
+    .areas-grid{
+        display:grid;
+        grid-template-columns:1fr;
+        gap:18px;
+        width:100%;
+    }
+
+    .area-card{
+        width:100%;
+        min-width:0;
+        padding:25px 22px;
+        border-radius:16px;
+        box-sizing:border-box;
+    }
+
+    .area-icon{
+        width:44px;
+        height:44px;
+        font-size:19px;
+        margin-bottom:14px;
+    }
+
+    .area-card h3{
+        font-size:23px;
+        margin-bottom:7px;
+    }
+
+    .area-card p{
+        font-size:15px;
+        line-height:1.55;
+    }
+
+    /* CTA */
+    .cta-wrap{
+        padding:0 16px 70px;
+    }
+
+    .cta{
+        padding:40px 25px;
+        display:block;
+    }
+
+    .cta h2{
+        font-size:30px;
+    }
+
+    .cta-btn{
+        display:inline-block;
+        margin-top:25px;
+    }
+
+    /* Footer */
+    footer{
+        display:block;
+        padding:35px 20px;
+    }
+
+    .footer-links{
+        margin-top:18px;
+        flex-wrap:wrap;
+    }
+}
